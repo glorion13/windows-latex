@@ -1,0 +1,15 @@
+{
+ "version": "0.1",
+ "language": "en-GB",
+ "dictionaryDefinitions": [
+     { "name": "projectDictionary", "path": "./dictionary.txt"}
+ ],
+ "dictionaries": ["projectDictionary"],
+ "languageSettings": [
+     { "languageId": "*", "dictionaries": ["projectDictionary"] }
+ ],
+ "ignoreRegExpList": [
+        "\\\\\\w*(\\[.*?\\])?(\\{.*?\\})?",
+        "\\$.+?\\$"
+     ]
+}

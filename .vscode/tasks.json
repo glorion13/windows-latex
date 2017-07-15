@@ -1,0 +1,40 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "taskName": "build",
+            "type": "shell",
+            "command": "powershell -NoProfile -File .vscode/build.ps1",
+            "group": "build",
+            "isDefault": true,
+            "presentation": {
+                "reveal": "always",
+                "panel": "dedicated"
+            },
+            "problemMatcher": []
+        },
+        {
+            "taskName": "quickBuild",
+            "type": "shell",
+            "command": "powershell -NoProfile -File .vscode/quickBuild.ps1",
+            "group": "build",
+            "presentation": {
+                "reveal": "always",
+                "panel": "dedicated"
+            }
+        },
+        {
+            "taskName": "clean",
+            "type": "shell",
+            "command": "powershell -NoProfile -File .vscode/clean.ps1",
+            "group": "build",
+            "presentation": {
+                "reveal": "always",
+                "panel": "dedicated"
+            },
+            "problemMatcher": []
+        }
+    ]
+}
